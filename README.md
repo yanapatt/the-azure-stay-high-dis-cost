@@ -2,13 +2,13 @@
 
 ## Data Analytics Project Canvas
 
-### Problem Statement / Background & Pain Points
+## Problem Statement / Background & Pain Points
 - สถานการณ์และปัญหาของ Azure Stay:
 ปัจจุบัน โรงแรม Azure Stay กำลังเผชิญกับภาวะ "High Distribution Costs" หรือต้นทุนช่องทางการจัดจำหน่ายที่สูงเกินไป แม้โรงแรมจะมีอัตราการเข้าพัก (Occupancy) และรายได้รวม (Gross Revenue) ที่ดูเหมือนจะเติบโตได้ดี แต่เมื่อพิจารณาถึงกำไรสุทธิ (Net Revenue) กลับพบว่าส่วนต่างกำไรนั้นบางลงอย่างมาก
 
 - Pain Point หลัก: โรงแรมพึ่งพาช่องทาง Online Travel Agencies (OTAs เช่น Expedia, Booking.com) ในสัดส่วนที่สูงมาก ซึ่งช่องทางเหล่านี้เรียกเก็บค่าคอมมิชชั่นสูงถึง 15-20% ทำให้โรงแรมสูญเสียรายได้ส่วนที่ควรจะเป็นกำไรไปมหาศาล ปัญหาคือผู้บริหารยังขาดความชัดเจนว่า ตกลงแล้วช่องทางไหนที่ "ทำกำไร (Profitable)" จริงๆ ไม่ใช่แค่ช่องทางที่ "สร้างยอดจอง (Volume)" เพียงอย่างเดียว
 
-### SMART Objectives / Value Propositions
+## SMART Objectives / Value Propositions
 เป้าหมายหลักของการวิเคราะห์ครั้งนี้คือการปรับปรุงโครงสร้างช่องทางการจัดจำหน่าย (Channel Mix) เพื่อเพิ่มกำไรสุทธิ โดยมีเป้าหมายแบบ SMART ดังนี้:
 - Specific: ลดสัดส่วนค่าใช้จ่ายในการได้มาซึ่งลูกค้า (Cost of Acquisition: COA%) ในภาพรวมลง โดยการเพิ่มสัดส่วนยอดจองผ่านช่องทาง Direct Web (ไม่ผ่านตัวกลาง)
 
@@ -22,7 +22,7 @@
 
 - Time-bound: เห็นผลลัพธ์ภายใน 6 เดือน (2 ไตรมาสถัดไป) หลังจากนำ Insights ไปปรับใช้
 
-### Questions / Hypothesis
+## Questions / Hypothesis
 - Hypothesis 1 (COA Efficiency): * สมมติฐาน: ช่องทาง Direct Web เมื่อรวมกับค่าใช้จ่ายทางการตลาด (Marketing Spend) แล้ว จะยังคงมีต้นทุนการได้มาซึ่งลูกค้า (COA%) ต่ำกว่าค่าคอมมิชชั่นเฉลี่ยของกลุ่ม OTAs อย่างมีนัยสำคัญ
   - วิธีทดสอบ: เปรียบเทียบ (Total Marketing Spend / Gross Rev จาก Direct) เทียบกับ (Total Commission / Gross Rev จาก OTA)
 - Hypothesis 2 (Day of Week Behavior): * สมมติฐาน: แพลตฟอร์ม OTAs จะสร้างยอดจองในช่วงวันหยุดสุดสัปดาห์ (ศุกร์-เสาร์) สูงกว่าช่องทาง Direct ซึ่งมักจะได้ลูกค้ากลุ่มองค์กร (Corporate) ในช่วงวันธรรมดา (จันทร์-พฤหัสบดี)
@@ -30,7 +30,7 @@
 - Hypothesis 3 (Rate Code Cannibalization): * สมมติฐาน: การขายราคาโปรโมชั่น (Promo) ผ่านช่องทาง OTAs ให้ค่า Net ADR (รายได้เฉลี่ยต่อห้องหลังหักคอมมิชชั่น) ที่ต่ำที่สุด และอาจต่ำกว่าจุดคุ้มทุน เมื่อเทียบกับการขายเรทปกติ (Rack Rate) ผ่านช่องทาง Direct
   - วิธีทดสอบ: หาค่าเฉลี่ย Net ADR โดยจัดกลุ่ม (Group by) ตาม Rate Code และ Booking Channel
 
-### Key Metrics / Attributes
+## Key Metrics / Attributes
 ตัวชี้วัดที่เราจะใช้เป็นเข็มทิศในการวิเคราะห์ ได้แก่:
 - Gross Room Revenue: รายได้ก่อนหักค่าใช้จ่าย (ใช้วัด Volume)
 
