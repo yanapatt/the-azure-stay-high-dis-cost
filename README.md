@@ -1,6 +1,7 @@
 # The Azure Stay: High Distribution Costs Problem
 
 ## Data Analytics Project Canvas
+<img width="1920" height="1080" alt="CP372_Presentation_Final" src="https://github.com/user-attachments/assets/b5320f65-ee26-4cb2-8b8c-e33305900f26" />
 
 ## Problem Statement / Background & Pain Points
 - สถานการณ์และปัญหาของ Azure Stay:
