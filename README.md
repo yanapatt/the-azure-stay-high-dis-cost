@@ -41,7 +41,7 @@
 - Net RevPAR: รายได้สุทธิต่อห้องว่างทั้งหมด (ตัวชี้วัดความสำเร็จสูงสุด)
 
 ## Data Dictionary
-### Table 1: fact_bookings
+### Table 1: `fact_bookings`
 
 | Attribute | Description | Data Type | Valid Range / Example |
 | :--- | :--- | :--- | :--- |
@@ -55,7 +55,7 @@
 | **net_room_revenue** | รายได้สุทธิ (Gross - Commission) | Float | 1,500.00 - 12,000.00 |
 | **status** | สถานะการจอง | String | Confirmed, Cancelled, Checked-Out |
 
-### Table 2: dim_channels
+### Table 2: `dim_channels`
 | Attribute | Description | Data Type | Valid Range / Example |
 | :--- | :--- | :--- | :--- |
 | **channel_id** | รหัสช่องทาง (Primary Key) | String | CH_01, CH_02 |
@@ -65,14 +65,14 @@
 | **default_commission_rate** | อัตราค่าคอมมิชชั่นมาตรฐาน (%) | Float | 0.00 - 0.20 (เช่น 0.15 คือ 15%) |
 | **contract_owner** | ชื่อผู้ดูแลสัญญา | String | John Doe, Jane Smith |
 
-### Table 3: dim_rate_codes
+### Table 3: `dim_rate_codes`
 | Attribute | Description | Data Type | Valid Range / Example |
 | :--- | :--- | :--- | :--- |
 | **rate_code_id** | รหัสแพ็คเกจราคา (Primary Key) | String | RT_RACK, RT_CORP, RT_PROMO |
 | **rate_name** | ชื่อเรียกแพ็คเกจราคา | String | Rack Rate, Corporate, Promotion |
 | **is_commissionable** | สามารถคิดคอมมิชชั่นจากราคานี้ได้หรือไม่ | Boolean | True, False |
 
-### Table 4: fact_marketing_spend
+### Table 4: `fact_marketing_spend`
 | Attribute | Description | Data Type | Valid Range / Example |
 | :--- | :--- | :--- | :--- |
 | **spend_id** | รหัสการจ่ายเงินค่าโฆษณา (Primary Key) | String | SPD-001 ถึง SPD-999 |
