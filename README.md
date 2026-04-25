@@ -20,14 +20,14 @@
 
 ## Questions / Hypothesis
 
-### Bussiness Question
+### Bussiness Questions
 1. ช่องทางใด (Booking Channel) มี Net ADR และ Net RevPAR สูงที่สุดและต่ำที่สุดเมื่อเทียบตลอดทั้งปี 2025?
 2. Cost of Acquisition (COA) % ของช่องทาง Direct Web (เมื่อรวม Cost Amount จาก fact_marketing_spend) คุ้มค่ากว่าการเสียค่าคอมมิชชัน 15-18% ให้ OTA หรือไม่?
 3. ลูกค้า Segment ไหน (เช่น Leisure หรือ Corporate) ที่นิยมจองผ่าน OTA และมักจะจองห้องพักประเภทใด (Room Type)?
 4. อัตราการยกเลิก (Cancellation Rate) และ No-Show บนช่องทางที่มีคอมมิชชันสูง (OTA) สูงกว่าช่องทาง Direct หรือไม่?
 5. ลูกค้าเก่าที่กลับมาพักซ้ำ (Returning Guests) มีพฤติกรรมการจองอย่างไร? เรายังคงต้องเสียค่าคอมมิชชันให้กับ OTA สำหรับลูกค้ากลุ่มที่รู้จักแบรนด์เราอยู่แล้วหรือไม่?
 
-### Hypothesis
+### Hypotheses
 1. ช่องทาง Direct Web ให้อัตรากำไรสุทธิต่อห้อง (Net ADR) สูงที่สุด แม้จะมีการทำโปรโมชัน (Rate Code: RT_PROMO) ลดราคาหน้าเว็บก็ตาม เนื่องจากไม่ต้องเสีย Commission แบบ Percentage
 2. ค่าใช้จ่ายด้านการตลาด (Marketing Spend) บน Google Ads มี ROI (Return on Investment) และช่วยลด COA % ได้ดีกว่าการยอมจ่ายค่าคอมมิชชันแบบ Flat Rate หรือ Percentage ให้กับ OTA
 3. การเข้าพักในช่วงสุดสัปดาห์ (Weekend) จะมีสัดส่วนจาก OTA ครองตลาดสูงสุด นำไปสู่ Commission Cost ที่กระจุกตัวอยู่ในวันเสาร์-อาทิตย์เป็นหลัก
