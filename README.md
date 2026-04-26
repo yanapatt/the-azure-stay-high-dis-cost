@@ -1,7 +1,7 @@
 # The Azure Stay: High Distribution Costs Problem
 
 ## Data Analytics Project Canvas
-<img width="1920" height="1080" alt="CP372_Presentation_Final" src="https://github.com/user-attachments/assets/b5320f65-ee26-4cb2-8b8c-e33305900f26" />
+<img width="1920" height="1080" alt="CP372_Project_Canvas (1)" src="https://github.com/user-attachments/assets/221e84aa-8f4a-4ee8-a6df-fedf16bbf256" />
 
 ## Problem Statement / Background & Pain Point
 - Background: เจ้าของโรงแรมอิสระขนาดกลางชื่อ The Azure Stay พบว่ากำไรไม่ได้เพิ่มขึ้นเลย แม้ว่าอัตราการเข้าพักจะอยู่ในระดับที่น่าพึงพอใจก็ตาม
