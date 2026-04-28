@@ -168,6 +168,28 @@
 | available_rooms | Number of rooms available for sale on this date | Ratio (Discrete) | >= 0 and <= total_inventory_count (e.g., 48) |
 | out_of_order_rooms | Number of rooms blocked for maintenance | Ratio (Discrete) | >= 0 and <= total_inventory_count (e.g., 2) |
 
+## Analysis/Model
+* Cost of Acquisition (COA) Modeling: สร้างโมเดลคำนวณต้นทุนการได้มาซึ่งลูกค้า โดยนำค่า Commission (OTA) มาเปรียบเทียบกับ Marketing Spend (Google Ads/Facebook) ที่ลงไปกับช่องทาง Direct Web เพื่อหาว่าแบบไหนคุ้มค่า (ROI) กว่ากัน
+* Guest Loyalty & Channel Market Share (การวิเคราะห์สัดส่วนการตลาดตามประเภทลูกค้า): วิเคราะห์พฤติกรรมของลูกค้า (Guest Type: New Guest vs. Returning Guest) จากตาราง dim_guests ว่ามีการเลือกใช้ช่องทางการจอง (Channel Type) แบบใด โดยคำนวณออกมาเป็น % Market Share ของจำนวน Booking ทั้งหมด
+* Demand Pacing & Daily OCC Curve (การวิเคราะห์ความหนาแน่นของความต้องการพักอาศัย): จำแนกช่วงเวลาออกเป็น Regular Demand และ High Demand โดยพิจารณาจาก Daily Occupancy (OCC) ที่เกิดขึ้นจริงในแต่ละวัน (Stay Date) และนำมาแยกสัดส่วนตาม Channel Type เพื่อดูว่าในวันที่ความต้องการสูง ห้องพักถูกกินสัดส่วนโดยช่องทางใด
+
+## Findings and Insight
+<img width="640" height="360" alt="CPP_Channel Profitability Analysis" src="https://github.com/user-attachments/assets/f1bb0cb6-fcd1-417f-80d2-55e6cbfa73d8" />
+
+* ผลลัพธ์ชี้ให้เห็นว่าโรงแรมมีวันที่ขายดีมาก (Occ > 90%) สูงถึง 214 วันในหนึ่งปี แต่ในวันเหล่านั้น โรงแรมก็ยังปล่อยให้ OTA เข้ามากินสัดส่วนห้องไปถึง 70.69% โดยยอมรับรายได้สุทธิแค่ 106.73 ดอลลาร์ต่อคืน ทั้งๆ ที่ถ้าขายผ่านช่องทาง Direct จะได้กำไรสูงถึง 120.12 ดอลลาร์ต่อคืน
+
+<img width="568" height="348" alt="CPP_Channel Profitability Analysis (1)" src="https://github.com/user-attachments/assets/0a069ba9-acce-47b9-bd3f-bbc61cfdd817" />
+
+* ลูกค้าเก่า (Returning Guests) ยังคงพึ่งพา OTA สูงถึง 70.55% ซึ่งแทบไม่ต่างจากพฤติกรรมของลูกค้าใหม่ (70.05%)
+
+<img width="580" height="348" alt="CPP_Channel Profitability Analysis (2)" src="https://github.com/user-attachments/assets/c9d229ef-f36b-4523-89f5-09b0d9450cfb" />
+
+* การใช้จ่ายงบการตลาดไปกับโฆษณา (Google Ads / Facebook) เพื่อดึงคนเข้า Direct Web ใช้เงินเพียง ~19,470 ดอลลาร์ แต่สร้างยอดขายได้เกือบ 7 ดอลลาร์ คิดเป็นต้นทุน (COA) เพียง 2.82% ในขณะที่การได้ยอดขายจาก Expedia ต้องเสีย COA ถึง 18%
+
+<img width="594" height="354" alt="CPP_Channel Profitability Analysis (3)" src="https://github.com/user-attachments/assets/c923dbb2-f538-4e6f-b1eb-3398dd6ea147" />
+
+* การยอมเสีย Margin เพื่อลดราคาให้ลูกค้า 10% หน้าเว็บไซต์ตัวเอง (RT_PROMO ได้ Net ADR 119.77) เจ็บตัวน้อยกว่า การฝืนขายราคาเต็มบน OTA แล้วถูกหักค่าคอมมิชชัน 15-18% (RT_RACK บน Booking.com ได้ Net ADR 111.73)
+
 ## Recommendations
 ACTION 1 (H1 & H2)
 * ต้นทุน COA ที่ 2.82% ของการยิงแอดถือว่า "ถูกมาก" เมื่อเทียบกับค่า Commission ของช่องทาง OTA ดังนั้นโรงแรมควรเพิ่มงบการโฆษณาบน Google Ads หรือ Facebook Ads โดยเน้นไปที่แคมเปญ "Brand Search" (คนที่ค้นหาชื่อโรงแรม) เพื่อลดจำนวนลูกค้ากลุ่มที่นิยมจองผ่านลิงก์ของ OTA ที่นิยมซื้อ Ads ดักชื่อโรงแรมเราไว้
