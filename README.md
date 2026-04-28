@@ -168,3 +168,20 @@
 | available_rooms | Number of rooms available for sale on this date | Ratio (Discrete) | >= 0 and <= total_inventory_count (e.g., 48) |
 | out_of_order_rooms | Number of rooms blocked for maintenance | Ratio (Discrete) | >= 0 and <= total_inventory_count (e.g., 2) |
 
+## Recommendations
+ACTION 1 (H1 & H2)
+* ต้นทุน COA ที่ 2.82% ของการยิงแอดถือว่า "ถูกมาก" เมื่อเทียบกับค่า Commission ของช่องทาง OTA ดังนั้นโรงแรมควรเพิ่มงบการโฆษณาบน Google Ads หรือ Facebook Ads โดยเน้นไปที่แคมเปญ "Brand Search" (คนที่ค้นหาชื่อโรงแรม) เพื่อลดจำนวนลูกค้ากลุ่มที่นิยมจองผ่านลิงก์ของ OTA ที่นิยมซื้อ Ads ดักชื่อโรงแรมเราไว้
+
+* เราสามารถ "ลดราคาการจองผ่านหน้าเว็บของเราเอง (Direct Web) ให้ถูกกว่าช่องทาง OTA" ได้ (เช่น ลด 12 ถึง 15%) การทำแบบนี้จะส่งผลให้ลูกค้ารู้สึกคุ้มค่าและตัดสินใจจองตรงในทันที ส่วนโรงแรมก็ยังมี Net ADR ที่สูงกว่า หรืออย่างน้อยก็เทียบเท่ากับการขายผ่านช่องทาง OTA
+
+ACTION 2 (H3)
+* Automated Post-Stay CRM: ทันทีที่ลูกค้า Checked-Out ระบบต้องส่ง Email หรือ SMS ขอบคุณ พร้อมแนบ "Secret Promo Code" สำหรับการจองครั้งถัดไปผ่าน Direct Web เท่านั้น
+* Front Desk Conversion: อบรมพนักงานต้อนรับ (Front Office) ว่าในขั้นตอน Check-out ให้เชิญชวนลูกค้าสมัคร Line OA / Member ของโรงแรม แลกกับสิทธิพิเศษ ซึ่งเป็น Touchpoint สุดท้ายที่สำคัญในการแย่งชิงลูกค้ามาจาก OTA
+
+ACTION 3 (H4)
+* เริ่มทำ Allotment Cut-off: ให้ทีม Revenue Manager มอนิเตอร์ยอดจองล่วงหน้า (On-the-books) วันไหนที่ยอดทะลุ 70-80% ให้ทำการ "ปิดการขายบน OTA (Close Out)" ทันที เพื่อเก็บห้อง 20% สุดท้ายไว้ขายบนเว็บโรงแรมเองหรือรับ Walk-in ในราคาเต็ม
+
+## Contributors
+* Pacharadanai Kurakanok (66102010145)
+* Sirayuth Chotithammaporn (66102010153)
+* Yanapatt Pankaseam (66102010236)
