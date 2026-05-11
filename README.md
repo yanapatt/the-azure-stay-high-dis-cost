@@ -171,6 +171,9 @@
 * Demand Pacing & Daily OCC Curve (การวิเคราะห์ความหนาแน่นของความต้องการพักอาศัย): จำแนกช่วงเวลาออกเป็น Regular Demand และ High Demand โดยพิจารณาจาก Daily Occupancy (OCC) ที่เกิดขึ้นจริงในแต่ละวัน (Stay Date) และนำมาแยกสัดส่วนตาม Channel Type เพื่อดูว่าในวันที่ความต้องการสูง ห้องพักถูกกินสัดส่วนโดยช่องทางใด
 
 ## Findings and Insight
+### Dashboard (Overview)
+<img width="1600" height="900" alt="Dashboard" src="https://github.com/user-attachments/assets/0040b46c-15bb-4a78-90c9-302f75885232" />
+
 ### Net ADR & Net RevPAR vs. Booking Channels
 <img width="1305" height="858" alt="Hypothesis1 1" src="https://github.com/user-attachments/assets/71e37ac9-6523-4934-bad1-c9ff05b826ed" />
 <br>
