@@ -171,13 +171,16 @@
 * Demand Pacing & Daily OCC Curve (การวิเคราะห์ความหนาแน่นของความต้องการพักอาศัย): จำแนกช่วงเวลาออกเป็น Regular Demand และ High Demand โดยพิจารณาจาก Daily Occupancy (OCC) ที่เกิดขึ้นจริงในแต่ละวัน (Stay Date) และนำมาแยกสัดส่วนตาม Channel Type เพื่อดูว่าในวันที่ความต้องการสูง ห้องพักถูกกินสัดส่วนโดยช่องทางใด
 
 ## Findings and Insight
+### Net ADR & Net RevPAR vs. Booking Channels
 <img width="1305" height="858" alt="Hypothesis1 1" src="https://github.com/user-attachments/assets/71e37ac9-6523-4934-bad1-c9ff05b826ed" />
 <br>
 
 > ช่องทาง Walk-in และ Direct Web เป็นช่องทางที่ไม่มีตัวกลางคอยหักค่าคอมมิชชัน ทำให้โรงแรมเก็บกำไรสุทธิต่อคืน (NetADR) ได้เต็มเม็ดเต็มหน่วยที่ 119.77 และ 121.58 ดอลลาร์ ในขณะที่ Expedia มี Net ADR ต่ำที่สุดเพียง 104.20 ดอลลาร์เพราะโมเดลของ OTA เจ้านี้มีการเก็บค่าคอมมิชชันสูงถึง 18% ที่ลดทอนความสามารถในการทำกำไรสุทธิต่อคืนของโรงแรมอย่างมีนัยสำคัญ
-<br>
+
+### Distribution Channel Performance: Daily Net Room Revenue Volume vs. Net ADR
 <img width="1627" height="841" alt="Hypothesis1 2" src="https://github.com/user-attachments/assets/45baa4b9-dba7-446e-9fd6-ac0467ba8809" />
-<br>
+
+### Distribution Channel Performance: Gross Room Revenue Volume vs. Net RevPAR
 <img width="1627" height="841" alt="Hypothesis1 3" src="https://github.com/user-attachments/assets/a9e32792-b335-452f-8c74-e945837ced3c" />
 <br>
 
@@ -185,7 +188,7 @@
 
 > ช่องทาง Walk-in สร้างสถิติที่ดูเหมือนจะขัดแย้งกันเอง (Paradox) โดยเป็นช่องทางที่สร้าง Net ADR ได้สูงที่สุดเป็นอันดับ 1 ที่ 121.58 ดอลลาร์ แต่ในขณะเดียวกันกลับมีปริมาณคืนเข้าพัก (Total Rooms Sold) ต่ำเกือบที่สุดที่ 1,647 คืน (สูงกว่า Corporate GDS เพียงช่องทางเดียว) และดึงค่า Net RevPAR ลงไปจมอยู่ท้ายตารางที่ 7.79 ดอลลาร์
 
-<br>
+### Net ADR Distribution by Channel Type and Rate Category
 <img width="1367" height="841" alt="Hypothesis1 4" src="https://github.com/user-attachments/assets/3cfce410-3755-4ddc-a11c-5a091369b6d0" />
 <br>
 
@@ -193,31 +196,31 @@
 
 > The Double-Hit Margin Compression: สาเหตุที่การนำโปรโมชันไปลงบน OTA เป็นเรื่องอันตรายต่อกำไร เพราะโรงแรมจะโดนผลกระทบ 2 ชั้น คือ 1) ฐานราคาถูกกดให้ต่ำลงจากส่วนลด 10% และ 2) ถูก OTA คิดเปอร์เซ็นต์คอมมิชชันทับลงไปอีก ทำให้ Net ADR ของ Agoda และ Expedia ร่วงลงไปเหลือเพียง 96-98 ดอลลาร์ (หายไปกว่า 20 ดอลลาร์ต่อคืน เมื่อเทียบกับ Direct Web)
 
-<br>
+### Cost of Acquisition (COA%) Analysis by Booking Channel
 <img width="1367" height="858" alt="Hypothesis2 1" src="https://github.com/user-attachments/assets/ea91e15b-c8c9-4912-b82f-51890a426474" />
 <br>
 
 > การใช้จ่ายงบการตลาดไปกับโฆษณา (Google Ads / Facebook) เพื่อดึงคนเข้า Direct Web ใช้เงินเพียง ~19,470 ดอลลาร์ แต่สร้างยอดขายได้เกือบ 7 ดอลลาร์ คิดเป็นต้นทุน (COA) เพียง 2.82% ในขณะที่การได้ยอดขายจาก Expedia ต้องเสีย COA ถึง 18%
 
-<br>
+### Cancellation and No-Show Volume: OTA vs. Direct
 <img width="1366" height="858" alt="Hypothesis3 1" src="https://github.com/user-attachments/assets/057ab9b1-f11e-4ae5-a77b-85f93c010b46" />
 <br>
 
 > ช่องทาง OTA มียอดจองที่สูญเปล่า (Cancelled และ No-Show) รวมสูงถึง 1,160 รายการ ซึ่งมากกว่าช่องทาง Direct กว่า 2.6 เท่า
 
-<br>
+### Net Opportunity Loss by Channel
 <img width="1366" height="841" alt="Hypothesis3 2" src="https://github.com/user-attachments/assets/42858fc2-9bb8-4e77-8afb-fe7bb11f8079" />
 <br>
 
 > ค่าเสียโอกาสสุทธิ (Net Opportunity Loss) ที่ทำให้รายได้โรงแรมสูญเสียรายได้จากการยกเลิกนั้น กระจุกตัวอยู่ที่ช่องทาง Booking.com (-3,864 $) เป็นหลัก ในขณะที่ OTA อื่น ๆ อย่าง Agoda และ Expedia โรงแรมยังสามารถนำห้องไปรีเซลเพื่อดึงรายได้กลับมาได้
 
-<br>
+### Loss Rooms Night vs. Revenue Recovery by Channel
 <img width="1367" height="841" alt="Hypothesis3 3" src="https://github.com/user-attachments/assets/098efc54-89f3-492c-92db-f5a979e89ee3" />
 <br>
 
 > แม้ Expedia จะมียอดการยกเลิกถึง (1,930 ห้อง-คืน) แต่ Direct Web คือช่องทางที่คุ้มค่ากว่า เพราะสร้างรายได้กู้คืนได้ใกล้เคียงกัน แม้จะมีปริมาณห้องที่สูญเสียไปน้อยกว่าถึง 295 ห้อง-คืนก็ตาม
 
-<br>
+### Booking Share (%) by Guest Type and Channel
 <img width="1367" height="841" alt="Hypothesis4" src="https://github.com/user-attachments/assets/55ce20bf-378c-4f6f-91ce-6025e7223df2" />
 <br>
 
@@ -225,7 +228,7 @@
 
 > โดยปกติแล้ว ลูกค้าเก่า (Returning Guest) ควรจะมีสัดส่วนการจองตรง (Direct) ที่สูงกว่าลูกค้าใหม่ เนื่องจากมีความเชื่อมั่นในแบรนด์ของเราแล้ว แต่จากกราฟจะเห็นว่าสัดส่วนการจองตรงของลูกค้าเก่า (24.51%) กลับน้อยกว่า ลูกค้าใหม่ (24.87%) แม้จะเพียงเล็กน้อย แต่สิ่งนี้ก็ชี้ให้เห็นว่าโรงแรมยังคงขาดกลยุทธ์การทำ Retention Marketing
 
-<br>
+### Market Share (%) by Channel Type vs. Demand Type
 <img width="1367" height="858" alt="Hypothesis5 1" src="https://github.com/user-attachments/assets/c0febf8c-bb1f-4f19-9132-7d878b547992" />
 <br>
 
