@@ -215,7 +215,7 @@
 <img width="1366" height="841" alt="Hypothesis3 2" src="https://github.com/user-attachments/assets/42858fc2-9bb8-4e77-8afb-fe7bb11f8079" />
 <br>
 
-> ค่าเสียโอกาสสุทธิ (Net Opportunity Loss) ที่ทำให้รายได้โรงแรมสูญเสียรายได้จากการยกเลิกนั้น กระจุกตัวอยู่ที่ช่องทาง Booking.com (-3,864 $) เป็นหลัก ในขณะที่ OTA อื่น ๆ อย่าง Agoda และ Expedia โรงแรมยังสามารถนำห้องไปรีเซลเพื่อดึงรายได้กลับมาได้
+> ค่าเสียโอกาสสุทธิ (Net Opportunity Loss) ที่ทำให้รายได้โรงแรมสูญเสียรายได้จากการยกเลิกนั้น กระจุกตัวอยู่ที่ช่องทาง Booking.com (-3,864 ดอลลาร์) เป็นหลัก ในขณะที่ OTA อื่น ๆ อย่าง Agoda และ Expedia โรงแรมยังสามารถนำห้องไปรีเซลเพื่อดึงรายได้กลับมาได้
 
 ### Loss Rooms Night vs. Revenue Recovery by Channel
 <img width="1367" height="841" alt="Hypothesis3 3" src="https://github.com/user-attachments/assets/098efc54-89f3-492c-92db-f5a979e89ee3" />
